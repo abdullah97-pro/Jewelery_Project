@@ -1,3 +1,2 @@
-console.log('Hello, Webpack and Babel!');
-
-alert("What are you doing?");
+const title = document.getElementById('title');
+title.innerHTML = 'Hello';
