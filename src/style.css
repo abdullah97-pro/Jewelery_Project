@@ -71,11 +71,18 @@ header {
 
 .navbar-collapse {
   /* position: absolute; */
-  display: block;
   width: 100%;
   background-color: red;
   padding-top: 50px;
   padding-bottom: 10px;
+}
+
+.navbar-collapse .active {
+  display: block;
+}
+
+.navbar-collapse:not(.active) {
+  display: none;
 }
 
 .navbar-collapse .nav {
