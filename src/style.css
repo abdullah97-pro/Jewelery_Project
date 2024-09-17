@@ -1,3 +1,100 @@
-h1 {
-  color: blue;
+:root {
+  --color-white: #fff;
+
+  /* text formatting */
+  --txt-captiliaze: capitalize;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 100%;
+  height: auto;
+  background-color: blue;
+}
+
+header {
+  width: 100%;
+  padding: 10px 30px;
+  background-color: black;
+}
+
+.navbar {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-toggler {
+  font-size: 2.5rem;
+  background-color: transparent;
+  color: orange;
+  border: none;
+  outline: none;
+  display: block;
+  cursor: pointer;
+}
+
+.navbar-toggler:hover {
+  color: purple;
+}
+
+.brand-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-logo img {
+  width: 30px;
+}
+
+.nav-collapse {
+  position: absolute;
+  width: 100%;
+}
+
+.discard {
+  position: absolute;
+  top: 0;
+  padding: 0 15px;
+  background-color: darkgoldenrod !important;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.navbar-collapse {
+  /* position: absolute; */
+  display: block;
+  width: 100%;
+  background-color: red;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.navbar-collapse .nav {
+  list-style-type: none;
+}
+
+.navbar-collapse .nav li {
+  display: block;
+  padding: 0 30px;
+}
+
+.navbar-collapse .nav li a {
+  display: block;
+  line-height: 2;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: var(--color-white);
+  text-transform: var(--txt-captiliaze);
+  text-align: center;
+  background-color: blue;
+  margin: 5px 0;
 }

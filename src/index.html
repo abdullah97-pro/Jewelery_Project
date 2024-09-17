@@ -8,8 +8,30 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Hello, Webpack and Babel</h1>
-    <h2 id="title"></h2>
+    
+    <main id="container">
+        <header>
+            <nav class="navbar">
+                <a href="#" class="brand-logo">
+                    <img src="./images/logo.png" alt="logo">
+                    <span>Ahmadi Jewellery</span>
+                </a>
+                <button type="button" id="navbar-toggler" class="navbar-toggler">≡</button>
+                <div class="nav-collapse">
+                    <div id="navbar-collapse" class="navbar-collapse">
+                        <ul class="nav">
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">jewellery</a></li>
+                            <li><a href="#">contact</a></li>
+                            <li><a href="#">login</a></li>
+                            <li><a href="#" class="discard">&#x2715;</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </main>
 
     <script src="bundle.js"></script>
 </body>
