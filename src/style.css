@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 #container {
@@ -19,8 +20,15 @@
 
 header {
   width: 100%;
-  padding: 10px 30px;
-  background-color: black;
+  height: 100vh;
+  padding: 10px 15px;
+  background-color: #fff;
+  background-image: url('./images/hero-bg.png'), url('./images/design-1.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0% 0%, 0% 80%;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .navbar {
@@ -28,12 +36,13 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  background-color: transparent;
 }
 
 .navbar-toggler {
   font-size: 2.5rem;
   background-color: transparent;
-  color: orange;
+  color: #000;
   border: none;
   outline: none;
   display: block;
@@ -49,6 +58,10 @@ header {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .brand-logo img {
@@ -70,7 +83,6 @@ header {
 }
 
 .navbar-collapse {
-  /* position: absolute; */
   width: 100%;
   background-color: red;
   padding-top: 50px;
@@ -104,4 +116,157 @@ header {
   text-align: center;
   background-color: blue;
   margin: 5px 0;
+}
+
+/* hero slideshow */
+#hero-slide {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_content {
+  width: 100%;
+  height: 50%;
+  font-size: 1.5rem;
+  padding: 30px 0;
+}
+
+.hero_content .hero_desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.hero_content h2 {
+  font-size: 2rem;
+}
+
+.hero_content .btn-shop {
+  font-size: 1rem;
+  margin-top: 1rem;
+  padding: 8px 40px;
+}
+
+.hero_content h2,
+.hero_content .btn-shop {
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.hero_content h2 span:first-child {
+  display: inline-block;
+  width: 50px;
+  font-weight: 500;
+  border: 1px solid red;
+  vertical-align: middle;
+}
+
+.hero_content h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.hero_content p {
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.hero_content button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  padding: 15px 40px;
+}
+
+.hero_image {
+  width: 100%;
+  height: 50%;
+}
+
+.hero_image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* sample of jewerlly */
+#sampleAds {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background-color: green;
+}
+
+@media (min-width: 768px) {
+  header {
+    height: 50vh;
+  }
+
+  #hero-slide {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .hero_content,
+  .hero_image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero_content h1 {
+    font-size: 5rem;
+    position: absolute;
+    top: 130px;
+  }
+
+  .hero_content p {
+    text-align: left;
+    margin-top: 100px;
+    padding-right: 14px;
+  }
+
+  .hero_image img {
+    width: 90%;
+    height: 80%;
+    margin-top: 60px;
+  }
+
+  .hero_content .hero_desc {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 996px) {
+  header {
+    height: 100vh;
+  }
+
+  #hero-slide {
+    height: 90%;
+    padding: 20px 80px 0 80px;
+  }
+
+  .hero_content {
+    padding-top: 100px;
+  }
+
+  .hero_content h1 {
+    top: 210px;
+  }
+
+  .hero_image img {
+    width: 90%;
+    height: auto;
+    margin-top: 0;
+  }
 }
