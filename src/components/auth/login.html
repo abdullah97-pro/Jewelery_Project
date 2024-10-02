@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+
 </head>
 <body>
     
+    <div class="container">
+        <div class="loginForm">
+            <h2>lodge</h2>
+            <form action="" id="loginForm">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="Password">
+                <button type="submit" id="LoginBtn">SignIn</button>
+            </form>
+            <p>Don't have an account <a href="./register.html">create an account</a></p>
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <script src="../js/login.js"></script>
+
 </body>
 </html>
