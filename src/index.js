@@ -71,13 +71,12 @@ data.slice(0,4).forEach(item => {
   
   const box = document.createElement('div');
   box.className = "box";
+  const name = document.createElement('div');
+  name.className = 'name';
+  const h6 = document.createElement('h6');
+  h6.textContent = `${item.title}`;
 
   box.innerHTML = `
-  <div class="name">
-    <h6>
-      ${item.title}
-    </h6>
-  </div>
   <div class="img-box">
     <img src="${item.pic}" alt="">
   </div>
@@ -91,6 +90,8 @@ data.slice(0,4).forEach(item => {
   </div>
   `;
 
+  name.appendChild(h6);
+  box.appendChild(name);
   container1.appendChild(box);
 
 });
